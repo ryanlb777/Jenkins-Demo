@@ -3,29 +3,38 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
 ### Follow this article in **[Youtube]()**
 
-### Prerequisites
+### Launch Instance
 1. EC2 RHEL 7.x Instance [Get help here]()
    - With Internet Access
    - Security Group with Port `8080` open for internet
-1. Java v1.8.x 
 
-## Install Java
+#### Notes
+1. Make sure Java v1.8.x is installed
+```sh
+java -version
+```
+2. Use sudo when needed
+
+### SSH Into instance
+SSH into your instance
+```sh
+
+chmod 400 youtube-test.pem
+
+ssh ssh -i "youtube-test.pem" ec2instanceurl
+
+```
+
+### Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
 ```sh
 yum install java-1.8*
-#yum -y install java-1.8.0-openjdk
 ```
 
 ### Confirm Java Version
 Lets install java and set the java home
 ```sh
 java -version
-find /usr/lib/jvm/java-1.8* | head -n 3
-#JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
-export JAVA_HOME
-PATH=$PATH:$JAVA_HOME
-# To set it permanently update your .bash_profile
-source ~/.bash_profile
 ```
 _The output should be something like this,_
 ```
@@ -49,6 +58,10 @@ yum -y install jenkins
 ```sh
 # Start jenkins service
 systemctl start jenkins
+
+# Check jenkins status
+
+systemctl status jenkins
 
 # Setup Jenkins to start at boot,
 systemctl enable jenkins
@@ -75,7 +88,7 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 1. Enter an item name – `My-First-Project`
    - Chose `Freestyle` project
 1. Under Build section
-	Execute shell : echo "Welcome to Jenkins Demo"
+	Execute shell : echo "Welcome to Jenkins Youtube"
 1. Save your job 
 1. Build job
 1. Check "console output"
