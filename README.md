@@ -21,7 +21,7 @@ SSH into your instance
 
 chmod 400 youtube-test.pem
 
-ssh ssh -i "youtube-test.pem" ec2instanceurl
+ssh -i "youtube-test.pem" ec2instanceurl
 
 ```
 
@@ -75,7 +75,7 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 #### Configure Jenkins
 - The default Username is `admin`
 - Grab the default password 
-  - Password Location:`/var/lib/jenkins/secrets/initialAdminPassword`
+  - Password Location:`cat /var/lib/jenkins/secrets/initialAdminPassword`
 - `Skip` Plugin Installation; _We can do it later_
 - Change admin password
   - `Admin` > `Configure` > `Password`
