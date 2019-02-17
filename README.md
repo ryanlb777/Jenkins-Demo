@@ -1,10 +1,10 @@
 # Install Jenkins on AWS EC2
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
 
-### Follow this article in **[Youtube]()**
+### Follow this article in **[Youtube](https://youtu.be/QhoiJ5D3SKM)**
 
 ### Launch Instance
-1. EC2 RHEL 7.x Instance [Get help here]()
+1. EC2 RHEL 7.x Instance
    - With Internet Access
    - Security Group with Port `8080` open for internet
 
@@ -94,8 +94,8 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 1. Check "console output"
 
 ### Next Step
-- [x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
-- [x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
-- [x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
-- [x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
+- [] [Configure Users & Groups in Jenkins]()
+- [] [Secure your Jenkins Server]()
+- [] [Jenkins Plugin Installation]()
+- [] [Jenkins Master-Slave Configuration]()
 - [ ] Setup Jenkins to run inside Tomcat Server
