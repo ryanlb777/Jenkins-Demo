@@ -1,6 +1,6 @@
 # Install Jenkins on AWS EC2
 
-<img src="https://wiki.jenkins.io/download/attachments/2916393/logo.png?version=1&modificationDate=1302753947000&api=v2"/>
+<img src="https://github.com/ryanlb777/Jenkins-Demo/blob/master/jenkins_img.PNG"/>
 
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
 
