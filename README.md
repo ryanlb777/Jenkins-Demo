@@ -1,4 +1,4 @@
-# Install Jenkins on AWS EC2
+# Install Jenkins on AWS EC2 Red Hat Linux Server
 
 <img src="https://github.com/ryanlb777/Jenkins-Demo/blob/master/jenkins_img.PNG"/>
 
