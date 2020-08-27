@@ -4,10 +4,6 @@
 
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
 
-
-
-### Follow this video on **[Youtube](https://www.youtube.com/watch?v=atYtvLefOws)**
-
 ### Launch Instance
 1. EC2 RHEL 7.x Instance
    - With Internet Access
@@ -93,7 +89,7 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 1. Enter an item name – `My-First-Project`
    - Chose `Freestyle` project
 1. Under Build section
-	Execute shell : echo "Welcome to Jenkins Youtube"
+	Execute shell : echo "Hello Jenkins"
 1. Save your job 
 1. Build job
 1. Check "console output"
